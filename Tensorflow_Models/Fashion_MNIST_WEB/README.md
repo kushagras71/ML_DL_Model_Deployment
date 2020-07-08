@@ -6,7 +6,7 @@ the model start it training using the built-in Fashion-MNIST dataset in the brow
 <img src="https://github.com/kushagras71/ML_DL_Model_Deployment/blob/master/Tensorflow_Models/Fashion_MNIST_WEB/ouput_images/Fashion_MNIST_Classifier_1.png" width=900 height=400>
 
 During training of the model the webpage displays the graph which shows the process of optimizing the weights in order to reduce the loss. The user can thus get a feel of the 
-training process. Once the training is completed a prompt shows up telling that the model is trained and you can use it to make classifications or predictions.
+training process. Once the training is completed a prompt shows up telling that the model is trained and then you can use it to make classifications or predictions.
 
 After training and making a classification the webpages looks somewhat as follows:
 

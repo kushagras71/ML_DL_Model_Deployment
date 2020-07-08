@@ -9,4 +9,11 @@ During training of the model the webpage displays the graph which shows the proc
 training process. Once the training is completed the prompt shows up telling that the model is trained and you can use it to make classifications. 
 
 After training and making a classification the webpages looks somewhat as follows:
+
 <img src="https://github.com/kushagras71/ML_DL_Model_Deployment/blob/master/Tensorflow_Models/MNIST_WEB/output_images/MNIST_Classifier_2.png" width=900 height=400>
+
+In the black box the user can draw any number from 0 to 9 and hit classify to check what the model predicts. Remember there might some wrong predictions because the models training in fast and takes on every refresh. Shortet training means less accuracy. But is the drawing is clear and is in the center os the box then the model must give the 
+right predictions.
+
+Here, the box has the drawing of digit '5', and
+the model made the correct prediction as '5.'

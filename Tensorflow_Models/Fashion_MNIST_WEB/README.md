@@ -20,4 +20,4 @@ then the model must give the
 right prediction.
 
 Here, the box has a drawing of a 'T-shirt', and
-the model made the correct prediction as 'T-Shirt'.
+the model made the correct prediction as 'T-shirt'.

@@ -1,7 +1,7 @@
 # MNIST Classifier.
 
 The TensorFlow model was built in JavaScript and whenever this script is executed i.e. the webpage is accessed or it is refreshed, 
-the model start it training using the built-in MNIST dataset.
+the model start it training using the built-in MNIST dataset in the browser itself.
 
 <img src="https://github.com/kushagras71/ML_DL_Model_Deployment/blob/master/Tensorflow_Models/MNIST_WEB/output_images/MNIST_Classifier_1.png" width=900 height=400>
 

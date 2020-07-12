@@ -1,7 +1,11 @@
 Hand Digit Recognition.
 =
-The model here is a classification model build using Transfer Learning. MobileNet (https://www.tensorflow.org/api_docs/python/tf/keras/applications/MobileNet) is the pre-trained model used for the extracting the feature from the input images and
-the dense layers for classification were hard coded in the index.js file.
+The model here is a classification model build using Transfer Learning. MobileNet is the pre-trained model used for the extraction of feature from the input images and
+the dense layers for classification were hard coded and added to the pre-trained model.
+
+MobileNet:  (https://www.tensorflow.org/api_docs/python/tf/keras/applications/MobileNet)
+
+Reference for the code: https://github.com/lmoroney/dlaicourse/tree/master/TensorFlow%20Deployment/Course%201%20-%20TensorFlow-JS/Week%204/Exercise
 
 The working is pretty straight forward. Whenever the webpage is accessed, the webcam on the system starts running (click "Allow" if prompted). When the webcam is running
 the user can use his/her hand to represent any number between 1 to 5 and click on the appropriate button related to the number. Suppose the hand shows number "3" then the user must click on the button with "Three" on it. Everytime a button with "One","Two", etc is clicked a frame from the webcam is snapshotted by the webpage and stored with the same label as of button clicked, in the background as part of the dataset. The labelling must be done correctly or else the model would give wrong since wrong data would be fed to it from training. Number of images fed to the network depends on the user. After all the images are collected hit "Train Network" button to start training.

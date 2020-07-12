@@ -1,0 +1,69 @@
+<style>
+    body{
+            background: linear-gradient(45deg, #6CBB3C, #99C68E);
+            text-align: center;
+            font-family: monospace;
+    }
+    .cam{
+        border-color: black;
+        border-style: solid;
+    }
+    button{
+        border-radius: 5px;
+        color: white;
+        background-color: #254117;
+        padding: 5px 7px 6px 7px;
+    }
+    hr{
+        color: black;
+    }
+    
+</style>
+
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+<script src="hand_digit_webcam.js"></script>
+<script src="hand_digit_dataset.js"></script>
+</head>
+<body>
+    <h2> <strong>Hand Digit Classifier</strong></h2>
+	<div class="cam">
+		<div >
+			<video autoplay playsinline muted id="wc" width="300" height="300"></video>
+		</div>
+	</div>
+    <br>
+	<button type="button" id="0" onclick="handleButton(this)" >One</button>
+	<button type="button" id="1" onclick="handleButton(this)" >Two</button>
+	<button type="button" id="2" onclick="handleButton(this)" >Three</button>
+	<button type="button" id="3" onclick="handleButton(this)" >Four</button>
+	<button type="button" id="4" onclick="handleButton(this)" >Five</button>
+    <br>
+    <br>
+	<div id="onesamples">One Digit Images:</div>
+	<div id="twosamples">Two Digit Images:</div>
+	<div id="threessamples">Three Digit Images:</div>
+	<div id="foursamples">Four Digit Images:</div>
+	<div id="fivesamples">Five Digit Images:</div>
+    <br>
+    <button type="button" id="train" onclick="doTraining()" >Train Network</button>
+    <hr>
+	<div id="dummy">Once training is complete, click 'Start Predicting' to see predictions, and 'Stop Predicting' to end. Once you are happy with your model, click 'Download Model' to save the model to your local disk.</div>
+    <br>
+    <button type="button" id="startPredicting" onclick="startPredicting()" >Start Predicting</button>
+    <br>	
+    <div id="prediction"></div>
+    <br>
+	<button type="button" id="stopPredicting" onclick="stopPredicting()" >Stop Predicting</button>
+<br>
+    <br>
+    <fieldset>
+    <div id='downloading'>Click to Download the model in JSON Format</div>
+    <button type="button" id="saveModel" onclick="saveModel()" >Download Model</button>
+        </fieldset>
+
+</body>
+
+<script src="index_exercise.js"></script>
+</html>

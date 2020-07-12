@@ -4,7 +4,7 @@ The model here is a classification model build using Transfer Learning. ModelNet
 the dense layers for classification were hard coded in the index.js file.
 
 The working is pretty straight forward. Whenever the webpage is accessed, the webcam on the system starts running (click "Allow" if prompted). When the webcam is running
-the user can use his/her hand to show any number between 1 to 5 and click on the appropriate button related to the number. Suppose the hand shows number "3" the user must click on the button with "Three" on it. Everytime a button with "One","Two", etc is clicked a frame from the webcam is snapshotted by the webpage and stored with the same label as of button clicked, in the background as part of the dataset. The labelling must be done correctly or else the model would give wrong since wrong data would be fed to it from training. Number of images fed to the network depends on the user. After all the images are collected hit "Train Network" button to start training.
+the user can use his/her hand to represent any number between 1 to 5 and click on the appropriate button related to the number. Suppose the hand shows number "3" then the user must click on the button with "Three" on it. Everytime a button with "One","Two", etc is clicked a frame from the webcam is snapshotted by the webpage and stored with the same label as of button clicked, in the background as part of the dataset. The labelling must be done correctly or else the model would give wrong since wrong data would be fed to it from training. Number of images fed to the network depends on the user. After all the images are collected hit "Train Network" button to start training.
 
 After feeding the images and before starting the training processes the webpage would look something like this:
 
@@ -26,3 +26,8 @@ Some sample predictions made by the model based on the 30 images per class are a
 <img src="https://github.com/kushagras71/ML_DL_Model_Deployment/blob/master/Tensorflow_Models/Hand_Number_Recognition/images/second_pred_after_training.png" width=800 height=350>
 
 <img src="https://github.com/kushagras71/ML_DL_Model_Deployment/blob/master/Tensorflow_Models/Hand_Number_Recognition/images/third_pred_after_training.png" width=800 height=350>
+
+
+Click on "Stop Predicting" when you are done working with the model.
+
+The user can download the trained model by clicking on download button. It is not shown in the screenshots but you can find it by scrolling down.
